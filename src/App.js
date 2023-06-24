@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  StyledButton,
+  StyledTitle,
+  SecondStyledButton,
+} from "./components/syles"
 
+import ComplexTitle from "./components/ComplexTitle"
+import ComplexTitleTwo from "./components/ComplexTitleTwo"
+import TitleWithColFromUtils from "./components/TitleWithColFromUtils"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <StyledTitle special>hello world</StyledTitle>
+      <StyledTitle>hello world 2</StyledTitle>
+      <StyledButton>click me</StyledButton>
+      <SecondStyledButton>second button</SecondStyledButton>
+      <ComplexTitle title="something more complex" />
+      <ComplexTitleTwo title="second complex"></ComplexTitleTwo> */}
+      <TitleWithColFromUtils title="title with colors from utils">
+
+      </TitleWithColFromUtils>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
