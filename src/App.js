@@ -9,7 +9,7 @@ function App() {
       <ThirdStyledButton large>test</ThirdStyledButton>
       <ThirdStyledButton>test</ThirdStyledButton>
       {/* why isn't this button turning blue when I pass isButtonBlue as a prop   */}
-      <SpecialButton buttonText="click me" isButtonBlue></SpecialButton>
+      <SpecialButton buttonText="click me" isButtonBlue={true}></SpecialButton>
     </div>
   )
 }
