@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 
 const SpecialButton = (props) => {
   console.log(props)
-  return <Wrapper>{props.buttonText}</Wrapper>
+  return <Wrapper {...props}>{props.buttonText}</Wrapper>
 }
 
 const Wrapper = styled.button`
